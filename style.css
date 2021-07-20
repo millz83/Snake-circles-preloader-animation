@@ -1,0 +1,61 @@
+body {
+    margin:0;
+    padding:0;
+    background: #333;
+}
+
+div {
+    width:400px;
+    height:100px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top:300px;
+}
+
+span {
+    width:50px;
+    height:50px;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+}
+
+span:nth-child(1) {
+    background: red;
+    animation: animate 1s linear 0.2s infinite;
+}
+
+span:nth-child(2) {
+    background: yellow;
+    animation: animate 1s linear 0.4s infinite;
+}
+
+
+span:nth-child(3) {
+    background: green;
+    animation: animate 1s linear 0.6s infinite;
+}
+
+span:nth-child(4) {
+    background: purple;
+    animation: animate 1s linear 0.8s infinite;
+}
+
+span:nth-child(5) {
+    background:  tan;
+    animation: animate 1s linear 1s infinite;
+}
+
+@keyframes animate {
+    0%{
+        top:0;
+    }
+    50% {
+        top:-30px;
+    }
+    100% {
+      top:0px;
+    }
+}
+
